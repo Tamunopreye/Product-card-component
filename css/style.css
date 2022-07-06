@@ -72,9 +72,14 @@ body {
   width: 100%;
 }
 
+#container .card .card-details button:focus, #container .card .card-details button:hover {
+  background-color: #0077ff;
+  color: #e0efff;
+}
+
 @media (max-width: 550px) {
   #container #container {
-    margin: 20px;
+    overflow: auto;
   }
   #container .card {
     display: -ms-grid;
@@ -82,6 +87,8 @@ body {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
   }
   #container .card .perfume {
     width: 100%;
